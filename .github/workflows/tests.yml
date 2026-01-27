@@ -78,7 +78,7 @@ jobs:
           RUSTDOCFLAGS: -Dwarnings --cfg getrandom_backend="rdrand"
         run: cargo test --features=std,sys_rng
 
-  extern_item_impls:
+  extern_impl:
     name: Extern Item Implementations
     runs-on: ubuntu-24.04
     steps:
@@ -88,9 +88,8 @@ jobs:
           toolchain: nightly
       - uses: Swatinem/rust-cache@v2
       - env:
-          RUSTFLAGS: -Dwarnings --cfg getrandom_backend="extern_item_impls"
-          RUSTDOCFLAGS: -Dwarnings --cfg getrandom_backend="extern_item_impls"
-        run: cargo test --features=std --test mod extern_item_impls
+          RUSTFLAGS: -Dwarnings --cfg getrandom_backend="extern_impl"
+        run: cargo test --features=std
 
   ios:
     name: iOS Simulator
