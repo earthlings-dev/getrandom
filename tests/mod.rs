@@ -292,7 +292,7 @@ mod custom {
     }
 }
 
-#[cfg(getrandom_backend = "extern_item_impls")]
+#[cfg(getrandom_backend = "extern_impl")]
 mod extern_item_impls {
     use core::mem::MaybeUninit;
     use getrandom::Error;
