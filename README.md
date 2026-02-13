@@ -333,7 +333,7 @@ RUSTFLAGS="-Zsanitizer=memory" cargo test -Zbuild-std --target=x86_64-unknown-li
 
 ## Minimum Supported Rust Version
 
-This crate requires Rust 1.85 or later.
+This crate requires Rust 1.93 or later.
 
 ## License
 

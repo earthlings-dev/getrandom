@@ -3,12 +3,13 @@ name = "custom_impl_test"
 description = "Helper crate for testing custom implementations"
 version = "0.1.0"
 edition = "2024"
+rust-version = "1.93.0"
 publish = false
 
 [workspace]
 
 [dependencies]
-getrandom = { path = ".." }
+getrandom = { git = "https://github.com/earthlings-dev/getrandom.git" }
 
 [lints.rust.unexpected_cfgs]
 level = "warn"
