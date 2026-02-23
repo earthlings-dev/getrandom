@@ -9,7 +9,7 @@ publish = false
 [workspace]
 
 [dependencies]
-getrandom = { git = "https://github.com/earthlings-dev/getrandom.git" }
+getrandom = { path = ".." }
 
 [lints.rust.unexpected_cfgs]
 level = "warn"

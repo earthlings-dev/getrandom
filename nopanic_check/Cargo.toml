@@ -13,7 +13,7 @@ name = "getrandom_wrapper"
 crate-type = ["cdylib"]
 
 [dependencies]
-getrandom = { git = "https://github.com/earthlings-dev/getrandom.git" }
+getrandom = { path = ".." }
 
 [profile.release]
 panic = "abort"
